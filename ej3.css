@@ -22,18 +22,16 @@ img {
   overflow: hidden;
 }
 
-/* Efecto hover en la imagen */
 .col-6:hover img {
   transform: scale(2.5);
   opacity: 0;
 }
 
-/* Texto interno oculto por defecto */
 .div-interno {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) scale(0.8); /* Inicia más pequeño */
+  transform: translate(-50%, -50%) scale(0.8); 
   width: 100%;
   height: 100%;
   background-color: rgb(255, 193, 245);
