@@ -1,0 +1,4 @@
+body, .main-wrapper{
+    height: 100dvh;
+    overflow: hidden;
+}
