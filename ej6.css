@@ -1,0 +1,92 @@
+body,
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.secondary-wrapper {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  width: 90vw;
+  background-image: url("./img-ej6/stars-bg.jpg");
+  position: relative;
+  background-size: contain;
+
+  display: inline-block;
+}
+
+.img-wrapper img {
+  width: 35%;
+  height: auto;
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+}
+
+.text-container {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  z-index: 100;
+  color: white;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.title-1 {
+  color: white;
+  font-size: 10rem;
+  text-align: center;
+}
+
+.title-2 {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.astronaut {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    animation: 
+        flotar 6s ease-in-out infinite alternate, 
+        mover 100s linear infinite alternate, 
+        girar 70s linear infinite;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mover {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 90%;
+        left: 90%;
+    }
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

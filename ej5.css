@@ -1,4 +1,62 @@
-body, .main-wrapper{
-    height: 100dvh;
-    overflow: hidden;
+body {
+  margin: 0;
+  padding: 0;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.secondary-wrapper {
+  height: 100dvh;
+}
+
+/* .image-preview {
+  width: 100%;
+  margin-inline: auto;
+  text-align: center;
+  position: relative;
+  height: 100%;
+} */
+
+.preview-img {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 65dvh;
+  object-fit: cover;
+  border-radius: 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+#img1:checked ~ .image-preview #preview-img1,
+#img2:checked ~ .image-preview #preview-img2,
+#img3:checked ~ .image-preview #preview-img3,
+#img4:checked ~ .image-preview #preview-img4,
+#img5:checked ~ .image-preview #preview-img5 {
+  opacity: 1;
+}
+
+.image-thumbs {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+}
+
+.little-img {
+  max-width: 100px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out, opacity 0.2s;
+}
+
+.little-img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
 }
