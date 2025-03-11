@@ -6,7 +6,9 @@ html, body {
   .main-wrapper{
     height: 100%;
   }
-
+  li{
+    white-space: nowrap;
+}
   .container-fluid{
     margin-top: 10%;
   }
@@ -29,7 +31,6 @@ html, body {
     height: 400px;
     position: absolute;
     transform-origin: center;
-    /* backface-visibility: hidden; */
   }
   
   .img-wrapper img:nth-of-type(1) {

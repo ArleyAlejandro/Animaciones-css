@@ -4,7 +4,9 @@ html {
   margin: 0;
   padding: 0;
 }
-
+li {
+  white-space: nowrap;
+}
 .secondary-wrapper {
   height: 100dvh;
   display: flex;
@@ -53,40 +55,38 @@ html {
 }
 
 .astronaut {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    animation: 
-        flotar 6s ease-in-out infinite alternate, 
-        mover 100s linear infinite alternate, 
-        girar 70s linear infinite;
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  animation: flotar 6s ease-in-out infinite alternate,
+    mover 100s linear infinite alternate, girar 70s linear infinite;
 }
 
 @keyframes flotar {
-    0% {
-        transform: translateY(10px);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes mover {
-    0% {
-        top: 10%;
-        left: 10%;
-    }
-    100% {
-        top: 90%;
-        left: 90%;
-    }
+  0% {
+    top: 10%;
+    left: 10%;
+  }
+  100% {
+    top: 90%;
+    left: 90%;
+  }
 }
 
 @keyframes girar {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
