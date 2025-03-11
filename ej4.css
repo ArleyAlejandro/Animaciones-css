@@ -25,6 +25,10 @@ html, body {
     transform-style: preserve-3d; 
     animation: rotacion 10s linear infinite;
   }
+
+  .img-wrapper:hover {
+    animation-play-state: paused;
+}
   
   .img-wrapper img {
     width: 350px;

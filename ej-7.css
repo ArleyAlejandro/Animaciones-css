@@ -12,6 +12,12 @@ li{
     white-space: nowrap;
 }
 
+.kind-message {
+    font-size: 10rem;
+    text-align: center;
+    animation: goOut 5s ease-in-out 2 forwards;
+}
+
 .secondary-wrapper {
     height: 100vh;
     overflow: hidden;
@@ -47,4 +53,19 @@ li{
         opacity: 1;  
     }
 }
+
+@keyframes goOut {
+    0% {
+        opacity: 0;
+        visibility: visible;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 
